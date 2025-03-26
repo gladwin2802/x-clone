@@ -20,6 +20,7 @@ import ProfilePopup from './components/Profile/ProfilePopup';
 import MobileHeader from './components/Mobile/MobileHeader';
 import useScreenSize from './hooks/useScreenSize';
 import './App.css';
+import 'bootstrap-icons/font/bootstrap-icons.min.css';
 
 const App = () => {
     const [tab, setTab] = useState('For you');
