@@ -1,0 +1,292 @@
+.lists-column {
+    flex: 0 0 600px;
+    border-left: 1px solid var(--twitter-border);
+    border-right: 1px solid var(--twitter-border);
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.lists-header {
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(12px);
+    z-index: 1;
+    border-bottom: 1px solid var(--twitter-border);
+}
+
+.lists-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+}
+
+.lists-header-content h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.lists-tabs {
+    display: flex;
+    border-bottom: 1px solid var(--twitter-border);
+}
+
+.lists-tab {
+    flex: 1;
+    padding: 16px;
+    background: none;
+    border: none;
+    color: var(--twitter-secondary-text);
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.2s;
+}
+
+.lists-tab:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.lists-tab.active {
+    color: var(--twitter-text);
+    font-weight: 700;
+}
+
+.lists-tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 56px;
+    height: 4px;
+    background-color: var(--twitter-blue);
+    border-radius: 9999px;
+}
+
+.lists-content {
+    padding: 32px 16px;
+}
+
+.lists-empty-state {
+    text-align: center;
+    padding: 32px 16px;
+    margin-bottom: 32px;
+}
+
+.lists-empty-state h2 {
+    font-size: 31px;
+    margin-bottom: 8px;
+}
+
+.lists-empty-state p {
+    color: var(--twitter-secondary-text);
+    font-size: 15px;
+}
+
+.discover-lists h3 {
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.lists-suggestions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.list-suggestion-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-radius: 16px;
+    background-color: rgb(22, 24, 28);
+    transition: background-color 0.2s;
+}
+
+.list-suggestion-card:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.list-info h4 {
+    font-size: 15px;
+    margin: 0 0 4px 0;
+}
+
+.list-info p {
+    color: var(--twitter-secondary-text);
+    font-size: 13px;
+    margin: 0;
+}
+
+.follow-list-button {
+    background-color: var(--twitter-text);
+    color: var(--twitter-background);
+    border: none;
+    border-radius: 9999px;
+    padding: 8px 16px;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.follow-list-button:hover {
+    background-color: rgb(215, 219, 220);
+}
+
+.bookmarked-posts {
+    width: 100%;
+}
+
+.empty-state-icon {
+    color: var(--twitter-secondary-text);
+    margin-bottom: 16px;
+}
+
+.your-lists-container {
+    display: flex;
+    height: calc(100vh - 120px);
+}
+
+.lists-sidebar {
+    width: 240px;
+    border-right: 1px solid var(--twitter-border);
+    padding: 16px 0;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    color: var(--twitter-secondary-text);
+}
+
+.list-item:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.list-item.active {
+    color: var(--twitter-text);
+    font-weight: 700;
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.list-item svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+}
+
+.list-item span {
+    font-size: 15px;
+}
+
+.list-posts {
+    flex: 1;
+    overflow-y: auto;
+    padding: 0 16px;
+}
+
+.header-with-back {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.back-button {
+    background: none;
+    border: none;
+    color: var(--twitter-text);
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+}
+
+.back-button:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.lists-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+    padding: 16px;
+}
+
+.list-card {
+    background-color: rgb(22, 24, 28);
+    border-radius: 16px;
+    padding: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.list-card:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.list-card-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.03);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-card-icon svg {
+    width: 24px;
+    height: 24px;
+    color: var(--twitter-text);
+}
+
+.list-card-info {
+    flex: 1;
+}
+
+.list-card-info h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 4px 0;
+}
+
+.list-card-info p {
+    color: var(--twitter-secondary-text);
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Tablet Styles */
+@media screen and (max-width: 1350px) {
+    .lists-column {
+        width: 100%;
+        flex: 100%;
+    }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 880px) {
+    .lists-column {
+        width: 100%;
+        flex: 100%;
+    }
+}
+
+/* Extra Small Screen Styles */
+@media screen and (max-width: 420px) {
+    .lists-content {
+        padding: 16px 10px;
+    }
+}

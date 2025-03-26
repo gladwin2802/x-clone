@@ -1,0 +1,125 @@
+.bookmarks-column {
+    flex: 0 0 600px;
+    border-left: 1px solid var(--twitter-border);
+    border-right: 1px solid var(--twitter-border);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.bookmarks-header {
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(12px);
+    z-index: 1;
+    border-bottom: 1px solid var(--twitter-border);
+}
+
+.bookmarks-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-text h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    color: var(--twitter-text);
+}
+
+.header-text .username {
+    color: var(--twitter-secondary-text);
+    font-size: 13px;
+}
+
+.bookmarks-content {
+    flex: 1;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.bookmarks-content::-webkit-scrollbar {
+    display: none;
+}
+
+.bookmarks-empty-state {
+    text-align: center;
+    padding: 32px 16px;
+    margin-bottom: 32px;
+}
+
+.bookmarks-empty-state h2 {
+    font-size: 31px;
+    margin-bottom: 8px;
+    color: var(--twitter-text);
+}
+
+.bookmarks-empty-state p {
+    color: var(--twitter-secondary-text);
+    font-size: 15px;
+}
+
+.bookmarks-suggestions {
+    text-align: center;
+    padding: 32px 16px;
+    max-width: 380px;
+    margin: 0 auto;
+}
+
+.bookmarks-suggestions h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: var(--twitter-text);
+}
+
+.bookmarks-suggestions p {
+    color: var(--twitter-secondary-text);
+    font-size: 15px;
+    margin-bottom: 24px;
+    line-height: 1.4;
+}
+
+.find-posts-button {
+    background-color: var(--twitter-blue);
+    color: white;
+    border: none;
+    border-radius: 9999px;
+    padding: 12px 24px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.find-posts-button:hover {
+    background-color: rgb(26, 140, 216);
+}
+
+@media screen and (max-width: 1350px) {
+    .bookmarks-column {
+        width: 100%;
+        flex: 100%;
+    }
+
+}
+
+@media screen and (max-width: 880px) {
+    .bookmarks-column {
+        width: 100%;
+        flex: 100%;
+    }
+
+    .bookmarks-header {
+        position: sticky;
+        top: 55px;
+    }
+}

@@ -1,0 +1,174 @@
+.notifications-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.notification-item {
+    display: flex;
+    padding: 12px 16px;
+    border-bottom: 1px solid #2f3336;
+    transition: background-color 0.2s;
+    align-items: flex-start;
+    background-color: #000;
+}
+
+.notification-item:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.notification-icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.heart-icon {
+    color: #f91880;
+    font-size: 1.2rem;
+}
+
+.chat-icon {
+    color: #1d9bf0;
+    font-size: 1.2rem;
+}
+
+.retweet-icon {
+    color: #00ba7c;
+    font-size: 1.2rem;
+}
+
+.verified-icon {
+    color: #1d9bf0;
+    font-size: 1.2rem;
+}
+
+.mention-icon {
+    color: #1d9bf0;
+    font-size: 1.2rem;
+}
+
+.notification-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.notification-content-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.notification-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.notification-content p {
+    margin: 0;
+    color: #e7e9ea;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.notification-content strong {
+    color: #e7e9ea;
+    font-weight: 700;
+}
+
+.notification-time {
+    color: #71767b;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    border-bottom: 1px solid #2f3336;
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(12px);
+    z-index: 9999;
+}
+
+.header-content h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #e7e9ea;
+}
+
+.tabs {
+    display: flex;
+    background-color: #000;
+    border-bottom: 1px solid #2f3336;
+}
+
+.tab {
+    flex: 1;
+    padding: 16px;
+    border: none;
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: 500;
+    color: #71767b;
+    cursor: pointer;
+    transition: all 0.2s;
+    position: relative;
+}
+
+.tab:hover {
+    background-color: rgba(239, 243, 244, 0.1);
+}
+
+.tab.active {
+    color: #e7e9ea;
+    font-weight: 600;
+}
+
+.tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background-color: #1d9bf0;
+    border-radius: 9999px;
+}
+
+.empty-notifications {
+    text-align: center;
+    padding: 32px 16px;
+    color: #71767b;
+}
+
+.empty-notifications h2 {
+    margin-bottom: 8px;
+    color: #e7e9ea;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.main {
+    background-color: #000;
+    min-height: 100vh;
+    color: #e7e9ea;
+}
+
+.main__content {
+    border-left: 1px solid #2f3336;
+    border-right: 1px solid #2f3336;
+}

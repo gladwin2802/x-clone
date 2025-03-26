@@ -1,0 +1,265 @@
+.sidebar {
+    position: sticky;
+    top: 0;
+    width: 275px;
+    height: 100vh;
+    padding: 0 12px;
+    background-color: var(--twitter-background);
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none;
+}
+
+.sidebar__logo {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 12px 0;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.sidebar__logo:hover {
+    background-color: var(--twitter-hover);
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin: 4px 0;
+}
+
+.sidebar-item:hover {
+    background-color: var(--twitter-hover);
+}
+
+.sidebar-item span {
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.sidebar-item--active {
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.sidebar-item--active span {
+    font-weight: bolder;
+    font-size: 22px;
+    color: #FFFFFF;
+}
+
+.sidebar-item--active:hover {
+    background-color: var(--twitter-hover);
+}
+
+.post-button {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 9999px;
+    padding: 15px;
+    font-size: 19px;
+    font-weight: bolder;
+    width: 90%;
+    margin: 16px auto;
+    cursor: pointer;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    margin: 0px 0;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.profile-section:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.profile-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.profile-name {
+    font-weight: 700;
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+}
+
+.profile-handle {
+    color: var(--twitter-secondary-text);
+    font-size: 14px;
+    display: block;
+}
+
+.three-dots {
+    margin-left: 12px;
+    font-size: 20px;
+    color: var(--twitter-text);
+}
+
+/* Tablet Styles */
+@media screen and (max-width: 1350px) {
+    .sidebar {
+        width: 68px;
+        padding: 0 4px;
+    }
+
+    .sidebar__logo {
+        width: 40px;
+        height: 40px;
+        margin: 8px auto;
+    }
+
+    .sidebar-item {
+        padding: 12px;
+    }
+
+    .sidebar-item span {
+        display: none;
+    }
+
+    .post-button {
+        display: none;
+    }
+
+    .profile-section {
+        display: none;
+    }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 880px) {
+    .sidebar {
+        position: fixed;
+        top: 55px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 55px);
+        padding: 0;
+        background-color: var(--twitter-background);
+        border-right: 1px solid var(--twitter-border);
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar-content {
+        flex-direction: column;
+        padding: 12px;
+    }
+
+    .sidebar__logo {
+        display: none;
+    }
+
+    .sidebar-item {
+        padding: 16px;
+        margin: 4px 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .sidebar-item span {
+        display: block;
+        margin-left: 20px;
+        font-size: 20px;
+    }
+
+    .post-button {
+        display: block;
+        margin: 16px;
+    }
+
+    .profile-section {
+        display: flex;
+        margin: 12px;
+        padding: 12px;
+    }
+}
+
+/* Extra Small Screen Styles */
+@media screen and (max-width: 420px) {
+    .sidebar {
+        top: 45px;
+        height: calc(100vh - 45px);
+    }
+
+    .sidebar-content {
+        padding: 8px;
+    }
+
+    .sidebar-item {
+        padding: 10px;
+        margin: 2px 0;
+    }
+
+    .sidebar-item span {
+        font-size: 14px;
+        margin-left: 12px;
+    }
+
+    .sidebar-item svg {
+        width: 20px !important;
+        height: 20px !important;
+    }
+
+    .profile-section {
+        padding: 8px;
+        margin: 8px;
+    }
+
+    .profile-image {
+        width: 30px;
+        height: 30px;
+        margin-right: 8px;
+    }
+
+    .profile-name {
+        font-size: 13px;
+    }
+
+    .profile-handle {
+        font-size: 12px;
+    }
+
+    .post-button {
+        padding: 10px;
+        font-size: 16px;
+        margin: 12px;
+    }
+}

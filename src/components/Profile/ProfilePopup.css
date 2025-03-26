@@ -1,0 +1,63 @@
+.profile-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    z-index: 1000;
+}
+
+.profile-popup {
+    position: fixed;
+    z-index: 1001;
+    background-color: var(--twitter-background);
+    border-radius: 16px;
+    box-shadow: rgb(255 255 255 / 20%) 0px 0px 15px, rgb(255 255 255 / 15%) 0px 0px 3px 1px;
+    min-width: 260px;
+    overflow: hidden;
+    animation: popup-appear 0.2s ease-out;
+}
+
+@keyframes popup-appear {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.popup-content {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 0;
+}
+
+.popup-item {
+    padding: 16px;
+    background: none;
+    border: none;
+    text-align: left;
+    font-size: 15px;
+    color: var(--twitter-text);
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-weight: 500;
+}
+
+.popup-item:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.popup-item.logout {
+    color: rgb(244, 33, 46);
+    font-weight: 700;
+}
+
+.popup-item.logout:hover {
+    background-color: rgba(244, 33, 46, 0.1);
+}

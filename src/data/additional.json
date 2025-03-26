@@ -1,0 +1,142 @@
+[
+    {
+        "id": 6,
+        "user": {
+            "name": "NASA",
+            "username": "@NASA",
+            "verified": true,
+            "profilePicture": "https://robohash.org/nasa?set=set4"
+        },
+        "content": "🚀 Historic moment! Our Mars rover has discovered potential signs of ancient microbial life. Join our live stream in 1 hour for the full announcement. #SpaceExploration #Mars",
+        "timestamp": "45m",
+        "media": {
+            "type": "image",
+            "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwli79UXcuAzVah3IsKm4odDDcK9bZ03fvIg&s",
+            "alt": "Mars rover discovery"
+        },
+        "replies": 456,
+        "retweets": 789,
+        "likes": 876,
+        "views": 998,
+        "isLiked": false,
+        "isRetweeted": false,
+        "isReplied": false,
+        "isViewed": false,
+        "isBookmarked": false,
+        "isFollowed": true,
+        "isTrending": true,
+        "category": "Technology"
+    },
+    {
+        "id": 7,
+        "user": {
+            "name": "PlayStation",
+            "username": "@PlayStation",
+            "verified": true,
+            "profilePicture": "https://robohash.org/playstation?set=set4"
+        },
+        "content": "The wait is over! God of War: Ragnarök 2 launches worldwide today. Embark on an epic journey with Kratos and Atreus. Are you ready? 🎮⚔️ #GodOfWarRagnarok",
+        "timestamp": "2h",
+        "media": {
+            "type": "image",
+            "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwli79UXcuAzVah3IsKm4odDDcK9bZ03fvIg&s",
+            "alt": "God of War Ragnarök 2 Launch"
+        },
+        "replies": 567,
+        "retweets": 678,
+        "likes": 889,
+        "views": 987,
+        "isLiked": false,
+        "isRetweeted": false,
+        "isReplied": false,
+        "isViewed": false,
+        "isBookmarked": false,
+        "isFollowed": false,
+        "isTrending": true,
+        "category": "Entertainment"
+    },
+    {
+        "id": 8,
+        "user": {
+            "name": "Formula 1",
+            "username": "@F1",
+            "verified": true,
+            "profilePicture": "https://robohash.org/formula1?set=set4"
+        },
+        "content": "VERSTAPPEN WINS THE MONACO GP! 🏆 An incredible drive through the streets of Monte Carlo! Hamilton P2, Leclerc P3. What a race! 🏎️ #MonacoGP",
+        "timestamp": "1h",
+        "media": {
+            "type": "image",
+            "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwli79UXcuAzVah3IsKm4odDDcK9bZ03fvIg&s",
+            "alt": "Monaco GP Podium"
+        },
+        "replies": 345,
+        "retweets": 654,
+        "likes": 876,
+        "views": 945,
+        "isLiked": false,
+        "isRetweeted": false,
+        "isReplied": false,
+        "isViewed": false,
+        "isBookmarked": false,
+        "isFollowed": true,
+        "isTrending": true,
+        "category": "Sports"
+    },
+    {
+        "id": 9,
+        "user": {
+            "name": "BBC Breaking News",
+            "username": "@BBCBreaking",
+            "verified": true,
+            "profilePicture": "https://robohash.org/bbc?set=set4"
+        },
+        "content": "BREAKING: Major breakthrough in renewable energy storage - Scientists develop new battery technology that could revolutionize clean energy adoption worldwide. Full story: bbc.in/34xKm",
+        "timestamp": "15m",
+        "media": {
+            "type": "image",
+            "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwli79UXcuAzVah3IsKm4odDDcK9bZ03fvIg&s",
+            "alt": "New Battery Technology"
+        },
+        "replies": 234,
+        "retweets": 567,
+        "likes": 789,
+        "views": 876,
+        "isLiked": false,
+        "isRetweeted": false,
+        "isReplied": false,
+        "isViewed": false,
+        "isBookmarked": false,
+        "isFollowed": true,
+        "isTrending": true,
+        "category": "News"
+    },
+    {
+        "id": 10,
+        "user": {
+            "name": "Marvel Studios",
+            "username": "@MarvelStudios",
+            "verified": true,
+            "profilePicture": "https://robohash.org/marvel?set=set4"
+        },
+        "content": "The multiverse expands. Watch the official trailer for 'Deadpool & Wolverine' - in theaters July 2025. Hugh Jackman and Ryan Reynolds unite in the most ambitious crossover yet! 🎬⚔️ #DeadpoolWolverine",
+        "timestamp": "30m",
+        "media": {
+            "type": "image",
+            "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwli79UXcuAzVah3IsKm4odDDcK9bZ03fvIg&s",
+            "alt": "Deadpool & Wolverine Trailer"
+        },
+        "replies": 678,
+        "retweets": 789,
+        "likes": 899,
+        "views": 967,
+        "isLiked": false,
+        "isRetweeted": false,
+        "isReplied": false,
+        "isViewed": false,
+        "isBookmarked": false,
+        "isFollowed": true,
+        "isTrending": true,
+        "category": "Entertainment"
+    }
+]

@@ -1,0 +1,142 @@
+[
+    {
+        "id": 1,
+        "user": {
+            "name": "Crunchyroll",
+            "username": "@Crunchyroll",
+            "verified": true,
+            "profilePicture": "https://robohash.org/crunchyroll?set=set4"
+        },
+        "content": "No plans, no destination, just the open road. Sometimes, the best stories start with a journey ✨\n\nZatsuTabi -That's Journey- coming April 2025 to Crunchyroll!",
+        "timestamp": "2h",
+        "media": {
+            "type": "image",
+            "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwli79UXcuAzVah3IsKm4odDDcK9bZ03fvIg&s",
+            "alt": "Scenic black beach with rock formations"
+        },
+        "replies": 234,
+        "retweets": 567,
+        "likes": 789,
+        "views": 876,
+        "isLiked": false,
+        "isRetweeted": false,
+        "isReplied": false,
+        "isViewed": false,
+        "isBookmarked": false,
+        "isFollowed": true,
+        "isTrending": true,
+        "category": "Entertainment"
+    },
+    {
+        "id": 2,
+        "user": {
+            "name": "TechCrunch",
+            "username": "@TechCrunch",
+            "verified": true,
+            "profilePicture": "https://robohash.org/techcrunch?set=set4"
+        },
+        "content": "Breaking: Apple announces new MacBook Pro models with M3 chips, promising up to 40% faster performance than previous generation. #Apple #Tech",
+        "timestamp": "1h",
+        "media": {
+            "type": "image",
+            "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwli79UXcuAzVah3IsKm4odDDcK9bZ03fvIg&s",
+            "alt": "New MacBook Pro"
+        },
+        "replies": 345,
+        "retweets": 678,
+        "likes": 890,
+        "views": 945,
+        "isLiked": false,
+        "isRetweeted": false,
+        "isReplied": false,
+        "isViewed": false,
+        "isBookmarked": false,
+        "isFollowed": false,
+        "isTrending": true,
+        "category": "Technology"
+    },
+    {
+        "id": 3,
+        "user": {
+            "name": "ESPN",
+            "username": "@ESPN",
+            "verified": true,
+            "profilePicture": "https://robohash.org/reuters?set=set5"
+        },
+        "content": "WHAT A GAME! The Warriors defeat the Lakers in overtime thriller! Curry drops 45 points! 🏀🔥",
+        "timestamp": "3h",
+        "media": {
+            "type": "image",
+            "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwli79UXcuAzVah3IsKm4odDDcK9bZ03fvIg&s",
+            "alt": "Basketball game highlight"
+        },
+        "replies": 456,
+        "retweets": 789,
+        "likes": 876,
+        "views": 967,
+        "isLiked": false,
+        "isRetweeted": false,
+        "isReplied": false,
+        "isViewed": false,
+        "isBookmarked": true,
+        "isFollowed": true,
+        "isTrending": true,
+        "category": "Sports"
+    },
+    {
+        "id": 4,
+        "user": {
+            "name": "Reuters",
+            "username": "@Reuters",
+            "verified": true,
+            "profilePicture": "https://robohash.org/reuters?set=set4"
+        },
+        "content": "BREAKING NEWS: Global climate summit reaches historic agreement on renewable energy targets. World leaders commit to ambitious goals.",
+        "timestamp": "30m",
+        "media": {
+            "type": "image",
+            "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwli79UXcuAzVah3IsKm4odDDcK9bZ03fvIg&s",
+            "alt": "Climate summit"
+        },
+        "replies": 567,
+        "retweets": 789,
+        "likes": 899,
+        "views": 987,
+        "isLiked": false,
+        "isRetweeted": false,
+        "isReplied": false,
+        "isViewed": false,
+        "isBookmarked": true,
+        "isFollowed": true,
+        "isTrending": false,
+        "category": "News"
+    },
+    {
+        "id": 5,
+        "user": {
+            "name": "Netflix",
+            "username": "@Netflix",
+            "verified": true,
+            "profilePicture": "https://robohash.org/netflix?set=set4"
+        },
+        "content": "Your favorite show is back! Season 2 of Squid Game premieres next month. Get ready for more intense challenges! 🦑",
+        "timestamp": "4h",
+        "media": {
+            "type": "image",
+            "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwli79UXcuAzVah3IsKm4odDDcK9bZ03fvIg&s",
+            "alt": "Squid Game Season 2"
+        },
+        "replies": 678,
+        "retweets": 890,
+        "likes": 956,
+        "views": 998,
+        "isLiked": false,
+        "isRetweeted": false,
+        "isReplied": false,
+        "isViewed": false,
+        "isBookmarked": false,
+        "isFollowed": false,
+        "isTrending": false,
+        "category": "Entertainment"
+    }
+]

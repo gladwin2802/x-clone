@@ -1,0 +1,226 @@
+.post-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+}
+
+.post-modal-container {
+    background-color: #000000;
+    border-radius: 16px;
+    width: 600px;
+    max-width: 80vw;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000000;
+    box-shadow: rgb(255 255 255 / 20%) 0px 0px 15px, rgb(255 255 255 / 15%) 0px 0px 3px 1px;
+}
+
+.post-modal-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+}
+
+.post-modal-close-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.65);
+    border: none;
+    color: #FFFFFF;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.post-modal-close-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.post-modal-draft-label {
+    color: var(--twitter-blue);
+    font-size: 15px;
+    margin-left: auto;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.post-modal-content {
+    padding: 32px 32px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-modal-input-section {
+    display: flex;
+    gap: 12px;
+    flex: 1;
+}
+
+.post-modal-profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.post-modal-input-container {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-modal-textarea {
+    width: 100%;
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    resize: none;
+    min-height: 120px;
+    margin-bottom: 12px;
+}
+
+.post-modal-textarea::placeholder {
+    color: rgb(113, 118, 123);
+}
+
+.post-modal-textarea:focus {
+    outline: none;
+}
+
+.post-modal-reply-privacy {
+    padding-bottom: 12px;
+}
+
+.post-modal-reply-button {
+    background-color: transparent;
+    border: none;
+    color: var(--twitter-blue);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 4px 12px;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.post-modal-globe-icon {
+    font-size: 14px;
+}
+
+.post-modal-reply-button:hover {
+    background-color: rgba(29, 155, 240, 0.1);
+}
+
+.post-modal-footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+}
+
+.post-modal-actions {
+    display: flex;
+    gap: 4px;
+}
+
+.post-modal-action-button {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    color: var(--twitter-blue);
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.post-modal-action-button:hover {
+    background-color: rgba(29, 155, 240, 0.1);
+}
+
+.post-modal-action-button.active {
+    color: var(--twitter-blue);
+    background-color: rgba(29, 155, 240, 0.1);
+}
+
+.post-modal-submit-button {
+    background-color: #FFFFFF;
+    color: #000000;
+    border: none;
+    border-radius: 9999px;
+    padding: 8px 16px;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.post-modal-submit-button:disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+.post-modal-submit-button:not(:disabled):hover {
+    background-color: rgb(215, 219, 220);
+}
+
+.post-modal-image-preview {
+    position: relative;
+    margin: 12px 0;
+    border-radius: 16px;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.post-modal-image-preview img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.remove-image-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: rgba(0, 0, 0, 0.75);
+    border: none;
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.remove-image-button:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}

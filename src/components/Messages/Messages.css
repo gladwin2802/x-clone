@@ -1,0 +1,177 @@
+.messages-main {
+    width: 470px;
+    border-left: 1px solid var(--twitter-border);
+    border-right: 1px solid var(--twitter-border);
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.messages-header {
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    z-index: 1000;
+    border-bottom: 1px solid var(--twitter-border);
+    border-right: 1px solid var(--twitter-border);
+    padding: 12px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.messages-header h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.messages-header-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.icon-button {
+    background: transparent;
+    border: none;
+    color: var(--twitter-text);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.icon-button:hover {
+    background-color: var(--twitter-hover);
+}
+
+.messages-content {
+    flex: 1;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.messages-content::-webkit-scrollbar {
+    display: none;
+}
+
+.welcome-messages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: calc(100vh - 60px);
+    padding: 32px;
+}
+
+.welcome-messages h1 {
+    font-size: 31px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.welcome-messages p {
+    color: var(--twitter-secondary-text);
+    font-size: 15px;
+    max-width: 420px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+.write-message-button {
+    background-color: var(--twitter-blue);
+    color: white;
+    border: none;
+    border-radius: 9999px;
+    padding: 12px 24px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.write-message-button:hover {
+    background-color: #1a8cd8;
+}
+
+.message-right-section {
+    width: 450px;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid var(--twitter-border);
+    margin-right: 40px;
+}
+
+.message-right-content {
+    flex: 1;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 32px;
+}
+
+.message-right-content::-webkit-scrollbar {
+    display: none;
+}
+
+.message-right-content h1 {
+    font-size: 31px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.message-right-content p {
+    color: var(--twitter-secondary-text);
+    font-size: 15px;
+    max-width: 420px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+.new-message-button {
+    background-color: var(--twitter-blue);
+    color: white;
+    border: none;
+    border-radius: 9999px;
+    padding: 12px 24px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.new-message-button:hover {
+    background-color: #1a8cd8;
+}
+
+/*Tablet Styles*/
+@media screen and (max-width: 1350px) {
+    .messages-main {
+        width: 100%;
+    }
+
+}
+
+/*Mobile Styles*/
+@media screen and (max-width: 880px) {
+    .messages-main {
+        width: 100%;
+    }
+
+}
