@@ -36,7 +36,7 @@ const LeftSidebar = ({ onNavigate, currentPage, onPostClick, onProfileClick }) =
         <div className="sidebar">
             <div className="sidebar-content">
                 <div className="sidebar__logo">
-                    <BsTwitterX size={30} />
+                    <BsTwitterX size={30} onClick={() => onNavigate('home')} />
                 </div>
                 <nav>
                     {menuItems.map((item, index) => (

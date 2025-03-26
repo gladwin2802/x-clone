@@ -174,6 +174,7 @@ const App = () => {
                     {shouldShowMobileHeader() && (
                         <MobileHeader
                             onProfileClick={handleMobileProfileClick}
+                            onNavigate={handleNavigation}
                         />
                     )}
                     <div className="app-content">
