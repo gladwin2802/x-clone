@@ -224,7 +224,6 @@ The application uses JSON files (posts.json, additional.json) in the data/ direc
 ```
 
 These JSON files simulate an API, providing data for posts and user interactions.
-API used: 
 
 ### UI/UX Guidelines
 
