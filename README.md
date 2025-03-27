@@ -114,67 +114,69 @@ The application will launch in your default browser at http://localhost:5173.
 ### Folder Structure
 ```bash
 src/
-┣ components/            # All React components
-┃ ┣ Bookmarks/           # Bookmark-related components
-┃ ┃ ┣ Bookmarks.css
-┃ ┃ ┗ BookmarksColumn.jsx
-┃ ┣ Communities/         # Community-related components
-┃ ┃ ┣ CommunitiesColumn.css
-┃ ┃ ┣ CommunitiesColumn.jsx
-┃ ┃ ┗ CommunitiesWelcomeModal.jsx
-┃ ┣ Explore/             # Explore page components
-┃ ┃ ┣ ExploreColumn.css
-┃ ┃ ┣ ExploreColumn.jsx
-┃ ┃ ┣ PostDetailModal.css
-┃ ┃ ┗ PostDetailModal.jsx
-┃ ┣ Home/                # Home page components
-┃ ┃ ┣ Feed.jsx
-┃ ┃ ┣ LeftSidebar.css
-┃ ┃ ┣ LeftSidebar.jsx
-┃ ┃ ┣ MainColumn.css
-┃ ┃ ┣ MainColumn.jsx
-┃ ┃ ┣ Post.css
-┃ ┃ ┣ Post.jsx
-┃ ┃ ┣ PostModal.css
-┃ ┃ ┣ PostModal.jsx
-┃ ┃ ┣ RightSidebar.css
-┃ ┃ ┗ RightSidebar.jsx
-┃ ┣ Lists/               # List management components
-┃ ┃ ┣ Lists.css
-┃ ┃ ┗ ListsColumn.jsx
-┃ ┣ Messages/            # Messaging components
-┃ ┃ ┣ MessageRightSection.jsx
-┃ ┃ ┣ Messages.css
-┃ ┃ ┗ MessagesColumn.jsx
-┃ ┣ Mobile/              # Mobile-specific components
-┃ ┃ ┣ MobileHeader.css
-┃ ┃ ┗ MobileHeader.jsx
-┃ ┣ Notification/        # Notification components
-┃ ┃ ┣ NotificationColumn.css
-┃ ┃ ┗ NotificationColumn.jsx
-┃ ┣ Profile/             # Profile-related components
-┃ ┃ ┣ EditProfileModal.css
-┃ ┃ ┣ EditProfileModal.jsx
-┃ ┃ ┣ ProfileColumn.css
-┃ ┃ ┣ ProfileColumn.jsx
-┃ ┃ ┣ ProfilePopup.css
-┃ ┃ ┗ ProfilePopup.jsx
-┃ ┗ Settings/            # Settings components
-┃   ┣ Settings.css
-┃   ┣ SettingsColumn.jsx
-┃   ┗ SettingsRightSection.jsx
-┣ context/               # React contexts for state management
-┃ ┣ PostsContext.jsx
-┃ ┗ UserContext.jsx
-┣ data/                  # JSON data files
-┃ ┣ additional.json
-┃ ┗ posts.json
-┣ hooks/                 # Custom React hooks
-┃ ┗ useScreenSize.js
-┣ App.css                # Main application styles
-┣ App.jsx                # Root application component
-┣ main.jsx               # Entry point for React
-┗ variables.css          # CSS variables for consistent styling
+├── components/
+│   ├── Bookmarks/
+│   │   ├── Bookmarks.css
+│   │   └── BookmarksColumn.jsx
+│   ├── Communities/
+│   │   ├── CommunitiesColumn.css
+│   │   ├── CommunitiesColumn.jsx
+│   │   └── CommunitiesWelcomeModal.jsx
+│   ├── Explore/
+│   │   ├── ExploreColumn.css
+│   │   ├── ExploreColumn.jsx
+│   │   ├── PostDetailModal.css
+│   │   └── PostDetailModal.jsx
+│   ├── Home/
+│   │   ├── Feed.jsx
+│   │   ├── LeftSidebar.css
+│   │   ├── LeftSidebar.jsx
+│   │   ├── MainColumn.css
+│   │   ├── MainColumn.jsx
+│   │   ├── Post.css
+│   │   ├── Post.jsx
+│   │   ├── PostModal.css
+│   │   ├── PostModal.jsx
+│   │   ├── RightSidebar.css
+│   │   └── RightSidebar.jsx
+│   ├── Lists/
+│   │   ├── Lists.css
+│   │   └── ListsColumn.jsx
+│   ├── Messages/
+│   │   ├── MessageRightSection.jsx
+│   │   ├── Messages.css
+│   │   └── MessagesColumn.jsx
+│   ├── Mobile/
+│   │   ├── MobileHeader.css
+│   │   └── MobileHeader.jsx
+│   ├── Notification/
+│   │   ├── NotificationColumn.css
+│   │   └── NotificationColumn.jsx
+│   ├── Profile/
+│   │   ├── EditProfileModal.css
+│   │   ├── EditProfileModal.jsx
+│   │   ├── ProfileColumn.css
+│   │   ├── ProfileColumn.jsx
+│   │   ├── ProfilePopup.css
+│   │   └── ProfilePopup.jsx
+│   ├── Settings/
+│   │   ├── Settings.css
+│   │   ├── SettingsColumn.jsx
+│   │   └── SettingsRightSection.jsx
+├── context/
+│   ├── __tests__/
+│   │   ├── PostsContext.test.jsx
+│   │   └── UserContext.test.jsx
+│   ├── PostsContext.jsx
+│   └── UserContext.jsx
+├── hooks/
+│   └── useScreenSize.js
+├── test/
+│   └── setup.js
+├── App.css
+├── App.jsx
+├── main.jsx
+└── variables.css
 ```
 
 ### Best Practices
@@ -222,6 +224,7 @@ The application uses JSON files (posts.json, additional.json) in the data/ direc
 ```
 
 These JSON files simulate an API, providing data for posts and user interactions.
+API used: 
 
 ### UI/UX Guidelines
 
