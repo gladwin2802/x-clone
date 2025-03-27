@@ -11,7 +11,7 @@ export const UserProvider = ({ children }) => {
         verified: false,
         profilePicture: "https://robohash.org/gladwin?set=set4",
         joinDate: "March 2025",
-        bio: "I'm a software engineer and a full stack developer. I'm a software engineer and a full stack developer. I'm a software engineer and a full stack developer. I'm a software engineer and a full stack developer.",
+        bio: "I'm a software engineer and a full stack developer.",
         following: 2,
         followers: 0
     });
