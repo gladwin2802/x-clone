@@ -33,7 +33,7 @@ export const PostsProvider = ({ children }) => {
             }
         }
 
-        axios.get('../src/data/posts.json')
+        axios.get('../../public/data/posts.json')
             .then(response => {
                 const jsonPosts = Array.isArray(response.data) ? response.data : [];
                 const mergedPosts = jsonPosts.map(post => {
@@ -42,7 +42,7 @@ export const PostsProvider = ({ children }) => {
                 });
                 setPosts([...userPosts, ...mergedPosts]);
 
-                axios.get('../src/data/additional.json')
+                axios.get('../../public/data/additional.json')
                     .then(additionalResponse => {
                         const additionalPosts = Array.isArray(additionalResponse.data) ? additionalResponse.data : [];
 

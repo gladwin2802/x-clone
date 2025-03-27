@@ -36,22 +36,6 @@
     margin: 0;
 }
 
-.close-button {
-    background: none;
-    border: none;
-    color: var(--twitter-text);
-    cursor: pointer;
-    padding: 8px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.close-button:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
 .save-button {
     background-color: var(--twitter-text);
     color: var(--twitter-background);

@@ -224,3 +224,20 @@
 .remove-image-button:hover {
     background-color: rgba(0, 0, 0, 0.9);
 }
+
+@media screen and (max-width: 880px) {
+    .post-modal-footer {
+        padding: 0;
+        overflow-x: scroll;
+        scrollbar-width: thin;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .post-modal-footer {
+        padding: 0;
+        overflow-x: scroll;
+        justify-content: flex-start;
+        scrollbar-width: thin;
+    }
+}

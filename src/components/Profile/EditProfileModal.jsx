@@ -40,9 +40,6 @@ const EditProfileModal = ({ onClose }) => {
             <div className="edit-profile-overlay" onClick={onClose} />
             <div className="edit-profile-modal">
                 <div className="edit-profile-header">
-                    <button className="close-button" onClick={onClose}>
-                        <BsX size={24} />
-                    </button>
                     <h2>Edit profile</h2>
                     <button className="save-button" onClick={handleSubmit}>
                         Save

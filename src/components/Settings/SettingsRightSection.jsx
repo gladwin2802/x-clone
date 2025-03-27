@@ -163,14 +163,12 @@ const SettingsRightSection = ({ selectedSetting = 'account', onBack }) => {
             case 'privacy':
                 return (
                     <div className="settings-content">
-                        {renderBackButton()}
                         {renderPrivacyContent()}
                     </div>
                 );
             case 'notifications':
                 return (
                     <div className="settings-content">
-                        {renderBackButton()}
                         {renderNotificationsContent()}
                     </div>
                 );
