@@ -184,6 +184,10 @@
         padding: 6px 12px;
         font-size: 14px;
     }
+
+    .main__tab {
+        min-width: 80px;
+    }
 }
 
 @media screen and (max-width: 420px) {
@@ -191,5 +195,9 @@
         display: flex;
         width: auto;
         overflow-x: auto;
+    }
+
+    .main__tab {
+        min-width: 80px;
     }
 }

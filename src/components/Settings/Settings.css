@@ -142,6 +142,7 @@
 }
 
 .settings-right-section {
+    width: 580px;
     flex: 0 0 580px;
     border-right: 1px solid var(--twitter-border);
     height: 100vh;
@@ -252,23 +253,11 @@
 /* Tablet Styles */
 @media screen and (max-width: 1350px) {
 
-    .settings-column {
-        width: 600px;
-        flex: 0 0 600px;
-        border-left: 1px solid var(--twitter-border);
-        border-right: 1px solid var(--twitter-border);
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-    }
-
+    .settings-column,
     .settings-right-section {
-        flex: 0 0 600px;
-        border-right: 1px solid var(--twitter-border);
-        height: 100vh;
-        overflow-y: auto;
-        scrollbar-width: none;
-        -ms-overflow-style: none;
+        width: 100%;
+        flex: 1 1 100%;
+        max-width: 100%;
     }
 
     .settings-header {
@@ -276,7 +265,7 @@
     }
 
     .settings-search-input {
-        width: 86%;
+        width: 85%;
     }
 
     .settings-content {
@@ -319,6 +308,6 @@
 /* Extra Small Screen Styles */
 @media screen and (max-width: 420px) {
     .settings-search-input {
-            width:75%;
-        }
+        width: 75%;
+    }
 }

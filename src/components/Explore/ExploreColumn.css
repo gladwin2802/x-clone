@@ -346,7 +346,7 @@
 /* Tablet Styles */
 @media screen and (max-width: 1350px) {
     .explore-search {
-        width: 100%;
+        width: 95%;
     }
 
     .who-to-follow {

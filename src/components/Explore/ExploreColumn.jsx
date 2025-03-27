@@ -66,7 +66,10 @@ const ExploreColumn = () => {
 
     const getFilteredContent = () => {
         if (!posts || posts.length === 0) {
-            return <div>Loading...</div>;
+            return <div className="empty-state">
+                <h2>No posts yet</h2>
+                <p>When available, posts will appear here.</p>
+            </div>;
         }
         switch (selectedTab) {
             case 'For You':

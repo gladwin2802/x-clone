@@ -1,5 +1,6 @@
 .messages-main {
-    width: 470px;
+    width: 400px;
+    flex: 0 0 400px;
     border-left: 1px solid var(--twitter-border);
     border-right: 1px solid var(--twitter-border);
     position: relative;
@@ -104,13 +105,13 @@
 }
 
 .message-right-section {
-    width: 450px;
+    width: 580px;
+    flex: 0 0 580px;
     height: 100vh;
     position: relative;
     display: flex;
     flex-direction: column;
     border-right: 1px solid var(--twitter-border);
-    margin-right: 40px;
 }
 
 .message-right-content {
@@ -164,6 +165,7 @@
 @media screen and (max-width: 1350px) {
     .messages-main {
         width: 100%;
+        flex: 1 1 100%;
     }
 
 }
